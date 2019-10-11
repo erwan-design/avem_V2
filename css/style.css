@@ -398,6 +398,10 @@ li {
     letter-spacing: 0.025em;
 }
 
+em {
+    opacity: .7;
+}
+
 blockquote {
     padding: 0 !important;
 }
@@ -456,6 +460,8 @@ a.button.dark:hover {
     background: transparent;
     color: #000;
 }
+
+
 
 /*--------------------------------------------------
     02. Page load
@@ -1004,6 +1010,65 @@ a.button.dark:hover {
     opacity: 1;
 }
 
+
+/*--------------------------------------------------
+    06(bis). Testimonials
+---------------------------------------------------*/
+
+.card {
+    border: 1px solid transparent!important;
+    padding: 0!important;
+}
+
+.card .carousel-item {
+  min-height: 320px;
+}
+.card .carousel-caption {
+  padding: 0;
+  right: 0;
+  left: 0;
+  color: #3d3d3d;
+  text-align: left;
+}
+.card .carousel-caption h3 {
+  color: #3d3d3d;
+}
+.card .carousel-caption p {
+  line-height: 30px;
+}
+.card .carousel-caption .col-sm-3 {
+  display: flex;
+  align-items: center;
+}
+.card .carousel-caption .col-sm-9 {
+  text-align: left;
+}
+.navi a {
+    text-decoration:none;
+}
+a > .ico {
+    background-color: #232132;
+    background-image: none;
+    padding: 10px;
+    
+}
+a:hover > .ico {
+    background-color: #666;
+}
+
+.testimonials {
+    font-size: 22px;
+    text-align: left;
+}
+
+.carousel-caption h5 {
+    margin-bottom: 0px;
+}
+
+
+
+
+
 /*-----------------------------------------------------------
     7. Portfolio
 -------------------------------------------------------------*/
@@ -1101,7 +1166,7 @@ a.button.dark:hover {
 }
 
 .title-caption-tooltip .portfolio-text-content h3 span {
-    background-color: #000;
+    background-color: #232132;
     color: #FFF;
     font-size: 30px;
     font-weight: 700;
@@ -1110,7 +1175,7 @@ a.button.dark:hover {
 }
 
 .title-caption-tooltip .portfolio-text-content span {
-    background-color: #000;
+    background-color: #232132;
     color: #FFF;
     font-size: 14px;
     padding: 5px;
@@ -1335,7 +1400,7 @@ a.button.dark:hover {
 
 #projectSlider2 .swiper-button-next,
 #projectSlider2 .swiper-button-prev {
-    background-color: #000;
+    background-color: #232132;
     background-image: none;
     bottom: 0;
     color: #FFF;
@@ -1721,6 +1786,12 @@ a.button.dark:hover {
 textarea {
     resize: none;
     height: 182px !important;
+}
+
+select {
+    -webkit-appearance: none;
+    padding: 9px 15px;
+    letter-spacing: normal;
 }
 
 .form-submit button {
@@ -2724,6 +2795,14 @@ textarea {
 @media all and (max-width: 767px) {
     .page-title {
         width: 100%;
+    }
+
+    .page-title>span {
+        padding-left: 0;
+    }
+
+    .page-title>span:before {
+        top:-20px;
     }
 
     .hero.lg .page-title {
