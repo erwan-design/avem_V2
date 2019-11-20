@@ -19,6 +19,7 @@
     8  Contact
     9  Blog
     10 Footer
+    10(bis)Parallax effect perso
     11 Responsive
 -------------------------------------------------------------*/
 
@@ -1009,64 +1010,6 @@ a.button.dark:hover {
     background-color: #000;
     opacity: 1;
 }
-
-
-/*--------------------------------------------------
-    06(bis). Testimonials
----------------------------------------------------*/
-
-.card {
-    border: 1px solid transparent!important;
-    padding: 0!important;
-}
-
-.card .carousel-item {
-  min-height: 320px;
-}
-.card .carousel-caption {
-  padding: 0;
-  right: 0;
-  left: 0;
-  color: #3d3d3d;
-  text-align: left;
-}
-.card .carousel-caption h3 {
-  color: #3d3d3d;
-}
-.card .carousel-caption p {
-  line-height: 30px;
-}
-.card .carousel-caption .col-sm-3 {
-  display: flex;
-  align-items: center;
-}
-.card .carousel-caption .col-sm-9 {
-  text-align: left;
-}
-.navi a {
-    text-decoration:none;
-}
-a > .ico {
-    background-color: #232132;
-    background-image: none;
-    padding: 10px;
-    
-}
-a:hover > .ico {
-    background-color: #666;
-}
-
-.testimonials {
-    font-size: 22px;
-    text-align: left;
-}
-
-.carousel-caption h5 {
-    margin-bottom: 0px;
-}
-
-
-
 
 
 /*-----------------------------------------------------------
@@ -2371,9 +2314,21 @@ select {
     margin-left: 0;
 }
 
+
 /*-----------------------------------------------------------
     11. Responsive
 -------------------------------------------------------------*/
+
+@media all and (max-width:800px) {
+    html,body {
+        overflow-x:hidden;
+    }
+
+    .post-nav {
+        margin-top: 50px;
+    }
+}
+
 
 @media all and (max-width:1250px) {
     .flexnav.standard {
@@ -2479,6 +2434,7 @@ select {
 }
 
 @media all and (min-width:800px) {
+
     nav {
         position: relative;
         width: auto;
@@ -2730,6 +2686,8 @@ select {
         font-weight: 700;
         padding: 30px;
         padding-bottom: 0;
+        text-align: right;
+        padding-right: 0px;
     }
 
     .flexnav li ul {
@@ -2856,16 +2814,16 @@ select {
 
     #projectSlider2 .swiper-button-next,
     #projectSlider2 .swiper-button-prev {
-        bottom: -25px;
+        /*bottom: -25px;*/
         box-shadow: 0 10px 15px rgba(0,0,0,0.05);
-        right: 7%;
-        text-align: center;
+        right: 0%;
+        text-align: center; 
     }
 
     #projectSlider2 .swiper-button-prev {
         background-color: #000;
         color: #FFF;
-        left: 7%;
+        left: 0%;
         right: auto;
     }
 
